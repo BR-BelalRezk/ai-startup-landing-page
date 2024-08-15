@@ -55,3 +55,10 @@ export const testimonials = [
     avatarImg: avatar4,
   },
 ] as const;
+
+export const navbarItems = [
+  "features",
+  "developers",
+  "pricing",
+  "changelog",
+] as const;

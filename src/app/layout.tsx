@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import Header from "@/components/layout/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,8 @@ export default function RootLayout({
       <body
         className={twMerge(inter.className, "antialiased bg-black text-white")}
       >
-        {children}
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );
