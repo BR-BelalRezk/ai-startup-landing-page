@@ -24,7 +24,7 @@ export default function GradientButton({
       whileInView={whileInView}
       animate={animate}
       className={twMerge(
-        "relative py-2 px-3 rounded-xl font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a208a] shadow-[0px_0px_12px_#8c45ff]",
+        "relative py-2 px-3 rounded-xl list-none font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a208a] shadow-[0px_0px_12px_#8c45ff]",
         className
       )}
       variants={variants}
