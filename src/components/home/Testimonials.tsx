@@ -38,7 +38,7 @@ export default function Testimonials() {
                       className="size-11 rounded-lg grayscale"
                     />
                   </figure>
-                  <div className="">
+                  <div>
                     <div>{item.name}</div>
                     <div className="text-white/50 text-sm">{item.title}</div>
                   </div>
