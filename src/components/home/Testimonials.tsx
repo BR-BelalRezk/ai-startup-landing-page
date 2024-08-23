@@ -12,7 +12,8 @@ export default function Testimonials() {
           Beyond Expectations
         </h2>
         <p className="text-white/70 md:text-xl max-w-sm mx-auto text-lg text-center mt-5 tracking-tight">
-          Our revolutionary AI SEO tools have transformed our clients' strategy.
+          Our revolutionary AI SEO tools have transformed our clients&aops;
+          strategy.
         </p>
         <article className="overflow-hidden flex mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
           <motion.ul
