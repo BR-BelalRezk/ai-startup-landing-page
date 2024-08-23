@@ -4,7 +4,7 @@ import GradientButton from "../ui/GradientButton";
 
 export default function Header() {
   return (
-    <header className="py-5 md:border-none z-50 overflow-x-clip sticky top-0 backdrop-blur-sm md:backdrop-blur-none border-b border-white/15">
+    <header className="py-5 md:pb-0 md:border-none z-50 overflow-x-clip sticky top-0 backdrop-blur-sm md:backdrop-blur-none border-b border-white/15">
       <nav className="container">
         <div className="flex justify-between items-center md:border md:max-w-2xl md:mx-auto md:border-white/15 md:py-2.5 md:backdrop-blur-sm md:px-5 md:rounded-full">
           <figure>
