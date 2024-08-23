@@ -25,7 +25,13 @@ const useMenu = () => {
   return context;
 };
 
-const Menu = ({ children }: { children: React.ReactNode }) => {
+const Menu = ({
+  children,
+  className,
+}: {
+  className: string;
+  children: React.ReactNode;
+}) => {
   const [toggle, setToggle] = useState(false);
   const value = { toggle, setToggle };
   useEffect(() => {
@@ -33,7 +39,11 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
       setToggle(true);
     }
   }, []);
-  return <MenuContext.Provider value={value}>{children}</MenuContext.Provider>;
+  return (
+    <MenuContext.Provider value={value}>
+      <div className={className}>{children}</div>
+    </MenuContext.Provider>
+  );
 };
 
 const MenuButtonToggle = ({
@@ -107,6 +117,7 @@ const MenuListItem = ({
       whileInView={whileInView}
       variants={variants}
       className={className}
+      viewport={{ once: true }}
     >
       {children}
     </motion.li>

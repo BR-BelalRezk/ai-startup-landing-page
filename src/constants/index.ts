@@ -1,7 +1,17 @@
+import acme from "@/assets/logo-acme.png";
+import apex from "@/assets/logo-apex.png";
+import celestial from "@/assets/logo-celestial.png";
+import quantum from "@/assets/logo-quantum.png";
+import echo from "@/assets/logo-echo.png";
+import pulse from "@/assets/logo-pulse.png";
 import avatar1 from "@/assets/avatar-1.png";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
 import avatar4 from "@/assets/avatar-4.png";
+
+import XIcon from "@/assets/social-x.svg";
+import InstaIcon from "@/assets/social-instagram.svg";
+import YTIcon from "@/assets/social-youtube.svg";
 export const features = [
   {
     icon: "/vroom.lottie",
@@ -62,3 +72,22 @@ export const navbarItems = [
   "pricing",
   "changelog",
 ] as const;
+
+export const logos = [
+  { src: acme, alt: "acme" },
+  { src: apex, alt: "apex" },
+  { src: celestial, alt: "celestial" },
+  { src: quantum, alt: "quantum" },
+  { src: echo, alt: "echo" },
+  { src: pulse, alt: "pulse" },
+] as const;
+
+export const footerLinks = [
+  "Features",
+  "Developers",
+  "Company",
+  "Blog",
+  "Changelog",
+] as const;
+
+export const footerSocails = [XIcon, InstaIcon, YTIcon] as const;
